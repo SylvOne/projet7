@@ -20,10 +20,7 @@ Cet algorithme appelé "brute force" à la particularité de tester toutes les c
 
 ### Optimiser cet algorithme pour qu'il soit plus rapide tout en restant efficace
 
-Ici une version optimisé de l'algorithme sera implémentée. Cette version utilisera ma méthode dite du "sac à dos".
-Cet algorithme, ne va pas tester toutes les combinaisons possibles, il utilisera une approche de programmation dynamique
-pour résoudre le problème de manière efficace. Il sera donc plus rapide à l'execution. Sa complexité temporelle est de l'ordre de O(nW),
-cependant dans ce projet W étant constant, cela ramènera la complexité temporelle à O(n) qui est une complexité linéaire.
+Ici, une version optimisée de l'algorithme sera implémentée. Cette version utilisera la méthode dite du "sac à dos". Cet algorithme ne testera pas toutes les combinaisons possibles, mais utilisera une approche de programmation dynamique pour résoudre le problème de manière efficace. Il sera donc plus rapide à l'exécution. Sa complexité temporelle est de l'ordre de O(nW), cependant, dans ce projet, W étant constant, cela ramènera la complexité temporelle à O(n), qui est une complexité linéaire.
 
 ## Installation
 
@@ -40,4 +37,4 @@ sur Linux/Mac ou `.\venv\scripts\activate` sur Windows.
 - Lancez l'algorithme brute force  avec `python bruteforce.py`.
 - Lancez l'algorithme optimisé avec `python optimized.py`.
 vous pouvez modifier l'ensemble des données d'entrée en ouvrant le fichier `optimized.py`
-et en commentant décommentant la ligne 96 - 97 ou 98.
+et en commentant décommentant la ligne 96, 97 ou 98.
