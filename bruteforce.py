@@ -20,7 +20,7 @@ def brute_force(data):
     meilleur_profit = 0
 
     for combinaison in combinaisons:
-        total_cost = sum(action[1]['price'] for action in combinaison)
+        total_cost = sum(action[1]['price'] for action in combinaison)*100
         total_profit = sum(action[1]['price'] * (action[1]['profit'] / 100) for action in combinaison)
         if total_cost <= 50000 and total_profit > meilleur_profit:
             meilleure_combinaison = combinaison
@@ -39,7 +39,7 @@ def affiche_combinaison(cout_total, profit_total, combinaison):
         print("Meilleure combinaison d'actions :")
         for action in combinaison:
             print(action)
-        print(f"Coût total : {cout_total} euros")
+        print(f"Coût total : {cout_total/100} euros")
         print(f"Bénéfice total : {profit_total} euros")
     else:
         print(" ")
